@@ -4,12 +4,12 @@ Free, open source fixed-location simulation for rootless jailbroken iOS 17 - 17.
 
 <p align="center"><img src="icon.png" alt="LostGoose icon" width="100"></p>
 
-Apple MapKit selection and place search, manual coordinates, ON/OFF, and a separate 30-second diagnostic test. English interface; no accounts or application backend. Jitter is not implemented. (Its in the works i promise)
+Apple MapKit selection and place search, manual coordinates, ON/OFF, and a separate 30-second diagnostic test. Jitter is not implemented (Its in the works i promise)
 
 ## Install
 
 - **Sileo:** add https://repo.leonardx.wtf/ and install LostGoose, no respring needed.
-- **IPA:** download from [Releases](https://github.com/leonxxrdo/LostGoose/releases) and install with TrollStore Lite while the jailbreak is active. The current 0.3.7 IPA has not yet been device-tested but it should work.
+- **IPA:** download from [Releases](https://github.com/leonxxrdo/LostGoose/releases) and install with TrollStore Lite while the jailbreak is active. The current 0.3.7 IPA has not yet been tested but it should work.
 
 Choose one format: both share a bundle identifier. Native 0.3.6 was tested on iPhone 14 Plus / iOS 17.3.1 (21D61) / Dopamine 3.0.12, including Tokyo and automatic restoration in Witness (test app) and Apple Maps. 0.3.7 just changes the support email and preserves that engine/signing profile; this exact build is untested on-device but it should work regardless.
 
