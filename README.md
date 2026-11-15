@@ -1,6 +1,6 @@
 # LostGoose
 
-Free, open source fixed-location simulation for jailbroken iOS. GPL-3.0-only.
+Free, open source fixed-location simulation for rootless jailbroken iOS 17 - 17.3.1
 
 <p align="center"><img src="icon.png" alt="LostGoose icon" width="100"></p>
 
@@ -8,10 +8,10 @@ Apple MapKit selection and place search, manual coordinates, ON/OFF, and a separ
 
 ## Install
 
-- **Sileo:** add https://repo.leonardx.wtf/ and install LostGoose.
-- **IPA:** download from [Releases](https://github.com/leonxxrdo/LostGoose/releases) and install with TrollStore Lite while the jailbreak is active. The current 0.3.7 IPA has not yet been device-tested.
+- **Sileo:** add https://repo.leonardx.wtf/ and install LostGoose, no respring needed.
+- **IPA:** download from [Releases](https://github.com/leonxxrdo/LostGoose/releases) and install with TrollStore Lite while the jailbreak is active. The current 0.3.7 IPA has not yet been device-tested but it should work.
 
-Choose one format: both share a bundle identifier. Native 0.3.6 was tested on iPhone 14 Plus / iOS 17.3.1 (21D61) / Dopamine 3.0.12, including Tokyo and automatic restoration in Witness and Apple Maps. 0.3.7 changes the support email and preserves that engine/signing profile; this exact build is untested on-device. Other environments are unverified.
+Choose one format: both share a bundle identifier. Native 0.3.6 was tested on iPhone 14 Plus / iOS 17.3.1 (21D61) / Dopamine 3.0.12, including Tokyo and automatic restoration in Witness (test app) and Apple Maps. 0.3.7 just changes the support email and preserves that engine/signing profile; this exact build is untested on-device.
 
 Turn OFF and confirm restoration before closing, updating or uninstalling. Force-quit can leave cleanup pending until the app is reopened; autonomous restoration is not guaranteed.
 
