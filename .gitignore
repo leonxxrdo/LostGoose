@@ -1,0 +1,12 @@
+/artifacts/*
+!/artifacts/.gitkeep
+/analysis/*
+!/analysis/.gitkeep
+/.venv/
+/.tooling/
+/build/
+/.wrangler/
+/.theos/
+/packages/
+__pycache__/
+*.pyc

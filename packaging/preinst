@@ -1,0 +1,39 @@
+#!/var/jb/bin/sh
+# SPDX-License-Identifier: GPL-3.0-only
+set -eu
+PATH=/var/jb/usr/bin:/var/jb/bin:/usr/bin:/bin
+export PATH
+case "${1:-}" in install|upgrade) ;; *) exit 0 ;; esac
+if ! command -v uicache >/dev/null 2>&1; then
+    printf '%s\n' 'LostGoose requires uikittools with uicache. No app was replaced.' >&2
+    exit 1
+fi
+if ! registered_apps=$(uicache -l); then
+    printf '%s\n' 'Could not inspect registered apps. LostGoose installation stopped.' >&2
+    exit 1
+fi
+resolved_directory=$(CDPATH= cd -P /var/jb/Applications 2>/dev/null && pwd -P) || resolved_directory=/var/jb/Applications
+while IFS= read -r entry; do
+    case "$entry" in
+        'org.ioslocationlab.diagnostic : '*)
+            registered_path=${entry#* : }
+            case "$registered_path" in
+                /var/jb/Applications/LostGoose.app|"$resolved_directory/LostGoose.app") ;;
+                *)
+                    printf '%s\n' 'An existing LostGoose/Location Lab installation is registered outside this package.' 'Installation stopped to protect the existing app and its data.' 'Turn simulation OFF in the existing app. Read https://repo.leonardx.wtf/migration.html before switching from TrollStore Lite.' >&2
+                    exit 1
+                    ;;
+            esac
+            ;;
+    esac
+done <<APPS
+$registered_apps
+APPS
+# Also catch a container app that is currently unregistered by LaunchServices.
+for candidate in /var/containers/Bundle/Application/*/LocationLabDiagnostic.app /var/containers/Bundle/Application/*/LostGoose.app; do
+    if [ -d "$candidate" ]; then
+        printf '%s\n' 'An existing container installation was found. No app or data was removed.' 'Read https://repo.leonardx.wtf/migration.html before switching installation methods.' >&2
+        exit 1
+    fi
+done
+exit 0

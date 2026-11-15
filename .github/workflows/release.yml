@@ -1,0 +1,32 @@
+name: Publish verified prerelease
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'release/v0.3.7.json'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish-lostgoose-v0.3.7
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    if: github.repository == 'leonxxrdo/LostGoose'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - name: Verify artifact hashes and publish prerelease
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PUBLISHER_URL: https://raw.githubusercontent.com/${{ github.repository }}/${{ github.sha }}/scripts/publish_github_release.py
+          MANIFEST_URL: https://raw.githubusercontent.com/${{ github.repository }}/${{ github.sha }}/release/v0.3.7.json
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl --fail --location --retry 4 --output publisher.py "$PUBLISHER_URL"
+          python3 publisher.py --manifest-url "$MANIFEST_URL" --commit "$GITHUB_SHA"

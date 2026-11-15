@@ -1,0 +1,9 @@
+Package: org.ios-location-lab.console
+Name: iOS Location Lab Console
+Version: 0.1.0
+Architecture: iphoneos-arm64
+Description: Experimental fixed-location console; activation and restoration unverified.
+Maintainer: iOS Location Lab contributors
+Author: iOS Location Lab contributors
+Section: Development
+Depends: firmware (>= 16.0)

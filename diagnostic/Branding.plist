@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>github_url</key>
+	<string>https://github.com/leonxxrdo/LostGoose</string>
+	<key>repository_url</key>
+	<string>https://repo.leonardx.wtf/</string>
+	<key>support_email</key>
+	<string>contact@leonardx.wtf</string>
+	<key>website_url</key>
+	<string>https://leonardx.wtf</string>
+</dict>
+</plist>

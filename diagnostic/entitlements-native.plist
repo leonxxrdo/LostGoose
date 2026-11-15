@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>application-identifier</key>
+	<string>org.ioslocationlab.diagnostic</string>
+	<key>com.apple.locationd.simulation</key>
+	<true/>
+	<key>com.apple.private.security.container-required</key>
+	<string>org.ioslocationlab.diagnostic</string>
+	<key>com.apple.security.exception.mach-lookup.global-name</key>
+	<array>
+		<string>com.apple.locationd.simulation</string>
+	</array>
+	<key>com.apple.security.iokit-user-client-class</key>
+	<array>
+		<string>AGXDeviceUserClient</string>
+		<string>AGXCommandQueue</string>
+		<string>AGXDevice</string>
+		<string>AGXSharedUserClient</string>
+		<string>AGXGLContext</string>
+		<string>IOSurfaceRootUserClient</string>
+		<string>IOSurfaceAcceleratorClient</string>
+	</array>
+	<key>jb.pmap_cs.custom_trust</key>
+	<string>PMAP_CS_APP_STORE</string>
+</dict>
+</plist>

@@ -1,0 +1,28 @@
+{
+  "repository": "leonxxrdo/LostGoose",
+  "tag": "v0.3.7",
+  "name": "LostGoose 0.3.7 \u2014 prerelease",
+  "body": "Support email is now **contact@leonardx.wtf**. This is the first GitHub prerelease, with source, Linux build instructions, IPA, rootless deb and SHA256SUMS.\n\n**The exact 0.3.7 IPA has not yet been device-tested.** It is intended for TrollStore Lite with the jailbreak active. Earlier IPA builds worked; the 0.3.6 native Sileo build passed map/storage/controls checks and a 30-second Tokyo/restoration cycle in both Apple Maps and Location Witness on iPhone 14 Plus, iOS 17.3.1 (21D61), Dopamine 3.0.12. The engine and signing profiles are unchanged in 0.3.7; this exact new deb is also not yet device-tested. Other environments are unverified.\n\nSileo: https://repo.leonardx.wtf/ \u2014 now using a separate Leonardx repository image. Choose one format; IPA and deb share a bundle identifier. Turn OFF and confirm restoration before closing, updating or uninstalling. Force-quit autonomous cleanup is not guaranteed.\n\nDownload the desired artifact and SHA256SUMS into one folder; verify with `sha256sum --check --ignore-missing SHA256SUMS`. Hashes verify consistency, not publisher identity. Corresponding source is GPL-3.0-only; SDK, credentials and phone logs are excluded. The Sileo APT metadata remains unsigned by GPG.\n",
+  "assets": [
+    {
+      "name": "LostGoose-0.3.7.ipa",
+      "url": "https://repo.leonardx.wtf/downloads/LostGoose-0.3.7.ipa",
+      "sha256": "875e3f57ba352b6010fc544df303d4b36307acd65922cb26942e87d8e53be037"
+    },
+    {
+      "name": "org.lostgoose.app_0.3.7_iphoneos-arm64.deb",
+      "url": "https://repo.leonardx.wtf/pool/org.lostgoose.app_0.3.7_iphoneos-arm64.deb",
+      "sha256": "f3376d36933aad0041400e4b5d05d576b8448cc365a7dce512702f0816613815"
+    },
+    {
+      "name": "LostGoose-0.3.7-source.tar.xz",
+      "url": "https://repo.leonardx.wtf/sources/LostGoose-0.3.7-source.tar.xz",
+      "sha256": "499998e692ba77ae71b6abd6a04a4b7ce93f39e46ca5f99ce6472560309b50c3"
+    },
+    {
+      "name": "SHA256SUMS",
+      "url": "https://repo.leonardx.wtf/downloads/SHA256SUMS",
+      "sha256": "8e0bcb6595bde4260ed210fd2e9118150ca259128545fa750a086fa5a2f190ed"
+    }
+  ]
+}

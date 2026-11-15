@@ -1,0 +1,9 @@
+#!/var/jb/bin/sh
+# SPDX-License-Identifier: GPL-3.0-only
+set -eu
+PATH=/var/jb/usr/bin:/var/jb/bin:/usr/bin:/bin
+export PATH
+if [ "${1:-}" = configure ]; then
+    uicache -p /var/jb/Applications/LostGoose.app
+    printf '%s\n' 'LostGoose installed with an explicit binding to its own data container.' 'Active Dopamine jailbreak required. Turn OFF before closing, updating or removing the app.'
+fi

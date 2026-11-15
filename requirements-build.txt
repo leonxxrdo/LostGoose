@@ -1,0 +1,2 @@
+# Icon resource generation; the iOS compiler/SDK remain documented in docs/BUILD.md.
+Pillow==13.0.0

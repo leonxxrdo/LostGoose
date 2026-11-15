@@ -1,0 +1,8 @@
+#!/var/jb/bin/sh
+# SPDX-License-Identifier: GPL-3.0-only
+set -eu
+PATH=/var/jb/usr/bin:/var/jb/bin:/usr/bin:/bin
+export PATH
+case "${1:-}" in
+    remove|deconfigure) uicache -u /var/jb/Applications/LostGoose.app ;;
+esac
