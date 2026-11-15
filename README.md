@@ -24,3 +24,9 @@ See [Linux build instructions](docs/BUILD.md), [installation](docs/INSTALLATION.
 ## Extra
 
 Yes, the icon is not symmetrical, i dont know how to use Illustrator and i did my best, feel free to submit your own icon idc.
+
+This is for educational purposes only and no, i wont include a joystick to change location, who even plays Pokemon Go on 2026? that game is old af.
+
+Dont use this to cheat on ur wife or lie to ur mom when u sneak out to go buy drugs.
+
+Also most apps use a mix of GPS location + WiFi/Cells to get ur location, this project only modifies the GPS location so good luck trying to bypass the other one.
