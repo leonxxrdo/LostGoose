@@ -4,7 +4,7 @@ Free, open source fixed-location simulation for rootless jailbroken iOS 17 - 17.
 
 <p align="center"><img src="icon.png" alt="LostGoose icon" width="100"></p>
 
-Apple MapKit selection and place search, manual coordinates, ON/OFF, and a separate 30-second diagnostic test. English interface; no accounts or application backend. Jitter is not implemented.
+Apple MapKit selection and place search, manual coordinates, ON/OFF, and a separate 30-second diagnostic test. English interface; no accounts or application backend. Jitter is not implemented. (Its in the works i promise)
 
 ## Install
 
