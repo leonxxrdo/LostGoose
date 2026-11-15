@@ -29,3 +29,5 @@ This is for educational purposes only and no, i wont include a joystick to chang
 Don't use this to cheat on your wife or lie to your mom when u sneak out to go buy drugs.
 
 Also most apps use a mix of GPS location + WiFi/Cells to get your location, this project only modifies the GPS location so good luck trying to bypass the other one.
+
+It should work for iOS 16 and downwards but I cant test it and honestly i made this only for my use case, it wont work for iOS 18 and upwards.
