@@ -6,7 +6,7 @@
 - Prepare the first GitHub source publication and IPA prerelease, including SHA256SUMS.
 - Give the Sileo repository its own user-provided image and Leonardx identity; preserve the LostGoose application icon.
 
-Simulation code and approved signing profiles are unchanged from 0.3.6. This exact IPA/deb build has not yet been device-tested.
+Simulation code and approved signing profiles are unchanged from 0.3.6. This exact IPA/deb build has not yet been tested but it should work.
 
 ## 0.3.6 (build 11)
 
