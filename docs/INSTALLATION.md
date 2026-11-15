@@ -8,8 +8,7 @@ For the tested Choicy setup, LostGoose uses Custom Tweak Configuration, Allow wi
 
 ## IPA / TrollStore Lite
 
-Use TrollStore Lite while the jailbreak is active. The 0.3.7 IPA retains the base signature profile; Lite handles installation and its signing adjustments. Earlier IPA builds worked on the test device, but the exact 0.3.7 IPA has not been physically tested. Do not describe it as verified until tested. Ordinary sideloading is unverified.
-
+Use TrollStore Lite while the jailbreak is active. The 0.3.7 IPA retains the base signature profile; Lite handles installation and its signing adjustments. Earlier IPA builds worked on the test device, but the exact 0.3.7 IPA has not been tested. It should work tho, if not, open an issue and i will fix it.
 ## Switching formats
 
 Both formats share one bundle identifier. Do not install duplicates. Before migrating, turn OFF, confirm your real location in independent apps, and back up anything you need. Exported diagnostics are not a complete app backup. Removal through Lite may remove data. The deb's pre-install check blocks conflicts without deleting the Lite app or migrating data.
