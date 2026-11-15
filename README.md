@@ -18,7 +18,7 @@ Turn OFF and confirm restoration before closing, updating or uninstalling. Force
 
 See [Linux build instructions](docs/BUILD.md), [installation](docs/INSTALLATION.md), [validation and test prerequisites](docs/VALIDATION.md), and [release notes](CHANGELOG.md).
 
-[Website](https://leonardx.wtf) · [Sileo repository](https://repo.leonardx.wtf/) · Support: contact@leonardx.wtf
+[Website](https://leonardx.wtf) · [Repository](https://repo.leonardx.wtf/) · Support: contact@leonardx.wtf
 
 ## Extra
 
