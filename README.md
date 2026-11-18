@@ -6,6 +6,10 @@ Free, open source fixed-location simulation for rootless jailbroken iOS 17 - 17.
 
 Apple MapKit selection and place search, manual coordinates, ON/OFF, and a separate 30-second diagnostic test. Jitter is not implemented (Its in the works i promise)
 
+[![LostGoose launch video — click to watch with sound](docs/media/lostgoose-preview.gif)](docs/media/lostgoose.mp4)
+
+[Watch with sound · 22 seconds](docs/media/lostgoose.mp4) · [Video credits](docs/media/ATTRIBUTION.md)
+
 ## Install
 
 - **Sileo:** add https://repo.leonardx.wtf/ and install LostGoose, no respring needed.
